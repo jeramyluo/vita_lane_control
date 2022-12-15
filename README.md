@@ -24,3 +24,14 @@ You will also need the following programs/packages:
 
 # Results
 <img align="center" width="800" height="" src="figures/p2pmedium.gif">
+
+# Author's and Acknowledgements
+• the pyvjoy directory was obtained from the github repository [here](https://github.com/tidzo/pyvjoy)
+
+• the ultrafastLaneDetector directory was obtained from the github repository [here](https://github.com/ibaiGorordo/onnx-Ultra-Fast-Lane-Detection-Inference)
+
+• the models directory was obtained from the github repository [here](https://github.com/PINTO0309/PINTO_model_zoo/tree/main/140_Ultra-Fast-Lane-Detection)
+
+• the grab_screen() function in the grabscreen.py file was obtained from the github repository [here](https://github.com/Sentdex/pygta5/blob/master/original_project/grabscreen.py)
+
+• all other python files and functions are original and written by Jeramy Luo

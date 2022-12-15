@@ -1,5 +1,5 @@
 # Visual Task Specification for Lane Control
-A self-highway-driving model using Visual Task Specifications primarily seen in robotics and applies them to the output of a deep learning lane detection model to find steering and throttle inputs to keep the vehicle in the lane.
+A self-highway-driving model that uses Visual Task Specifications primarily seen in robotics and applies them to the output of a deep learning lane detection model to find steering and throttle inputs to keep the vehicle in the lane. The model was tested in a simulated setting in Grand Theft Auto V's highways.
 # Requirements
 ```
 pip install -r requirements.txt

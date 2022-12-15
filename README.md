@@ -1,5 +1,7 @@
 # Visual Task Specification for Lane Control
-A self-highway-driving model that uses Visual Task Specifications primarily seen in robotics and applies them to the output of a deep learning lane detection model to find steering and throttle inputs to keep the vehicle in the lane. The model was tested in a simulated setting in Grand Theft Auto V's highways.
+A highway self-driving model that uses Visual Task Specifications primarily seen in robotics and applies them to the output of a deep learning lane detection model to find steering and throttle inputs to keep the vehicle in the lane. The model was tested in a simulated setting in Grand Theft Auto V's highways.
+
+More information on visual tasks specifications can be found in [this paper](https://www.semanticscholar.org/paper/Visual-Task-Specification-User-Interface-for-Visual-Gridseth/1bb3caff33a6771404434c5cf421c63fa382bcfa) by Gridseth et. al., or [this paper](https://www.semanticscholar.org/paper/What-Tasks-can-be-Performed-with-an-Uncalibrated-Hespanha-Dodds/2b4b27fa9992bb7d295a61e3ff0dd5d5baf945c5) by Hespanha et. al.
 # Requirements
 ```
 pip install -r requirements.txt
@@ -25,7 +27,7 @@ You will also need the following programs/packages:
 # Results
 <img align="center" width="800" height="" src="figures/p2pmedium.gif">
 
-# Author's and Acknowledgements
+# Acknowledgements
 • the pyvjoy directory was obtained from the github repository [here](https://github.com/tidzo/pyvjoy)
 
 • the ultrafastLaneDetector directory was obtained from the github repository [here](https://github.com/ibaiGorordo/onnx-Ultra-Fast-Lane-Detection-Inference)

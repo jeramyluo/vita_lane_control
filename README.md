@@ -15,12 +15,12 @@ You will also need the following programs/packages:
 
 # Instructions
 
-1. Install required packages and programs.
-2. Download the TuSimple model from [here](https://github.com/PINTO0309/PINTO_model_zoo/tree/main/140_Ultra-Fast-Lane-Detection) and place the .onnx file into the models folder.
-3. Run x360ce, vJoy, and Grand Theft Auto V.
-4. Place character in a "Brute Camper" vehicle on the highway.
+1. Install required packages and programs
+2. Download the TuSimple model from [here](https://github.com/PINTO0309/PINTO_model_zoo/tree/main/140_Ultra-Fast-Lane-Detection) and place the .onnx file into the models folder
+3. Run x360ce, vJoy, and Grand Theft Auto V
+4. Place character in a "Brute Camper" vehicle on the highway
 5. Run lanecontrol.py
-6. Change driving settings with the control panel.
+6. Change driving settings with the control panel
 
 # Results
 <img align="center" width="800" height="" src="figures/p2pmedium.gif">

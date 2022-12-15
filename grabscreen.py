@@ -1,3 +1,10 @@
+'''
+  File name: grabscreen.py
+  Author(s):  Jeramy Luo - process_input() - small function to process input wrote by Jeramy
+              Daniel Kukiela - grab_screen() - obtained online from https://github.com/Sentdex/pygta5/blob/master/original_project/grabscreen.py
+  Purpose: Functions required to obtain and preprocess the input frame of the testing environment.
+'''
+
 import cv2
 import numpy as np
 import win32gui, win32ui, win32con, win32api

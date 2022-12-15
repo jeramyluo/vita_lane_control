@@ -1,27 +1,33 @@
+'''
+  File name: visualtaskspec.py
+  Author(s):  Jeramy Luo - entire file
+  Purpose: Contains the visual task specification class for the lane control system.
+'''
+
 import numpy as np
 import cv2
 
 from shapely.geometry import Polygon
 
 class vistaskspec():
-    def __init__(self, task: str):
-        # initializing task
-        self.task = task
+    def __init__(self):
+        # initializing task list
+        self.task_list = ["point2point", "point2line", "cent2point", "cent2line", "parlines", "line2line"]
     
-    def get_error(self, lane_points, detected, output_img):
+    def get_error(self, lane_points, detected, output_img, mode):
         # this function calls the function corresponding to the defined visual specification task
 
         # checking if adjacent lanes are detected:
         if detected[1] and detected[2] == 1:
+            # defining the visual task based on the mode
+            visual_task = getattr(self, f"{self.task_list[mode]}")
             # extracting left and right lane
             left_lane = np.array(lane_points[1]).transpose()
             right_lane = np.array(lane_points[2]).transpose()
 
             # finding screen width
             width = output_img.shape[1]
-            # assigning function corresponding to task
-            visual_task = getattr(self, f"{self.task}")
-            # calling function
+            # calling function corresponding to task
             error, output_img = visual_task(left_lane, right_lane, width, output_img)
             # showing output image
             cv2.imshow("Lane Detection", output_img[0:620, 320:960])
@@ -144,7 +150,7 @@ class vistaskspec():
         cv2.line(output_img, (int(width/2), 550), (int(width/2), 400), (0, 255, 0), 4)
 
         # drawing an arrow showing the error between the vehicle path line and the centroid of the lane
-        cv2.arrowedLine(output_img, (int(cent[0]), int(cent[1])), (int(width/2), int(cent[1])), (255, 0, 0), 4)
+        cv2.arrowedLine(output_img, (int(width/2), int(cent[1])), (int(cent[0]), int(cent[1])), (255, 0, 0), 4)
 
         return e_p2l, output_img
 

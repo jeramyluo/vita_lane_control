@@ -3,6 +3,7 @@ A highway self-driving model that uses Visual Task Specifications primarily seen
 
 More information on visual tasks specifications can be found in [this paper](https://www.semanticscholar.org/paper/Visual-Task-Specification-User-Interface-for-Visual-Gridseth/1bb3caff33a6771404434c5cf421c63fa382bcfa) by Gridseth et. al., or [this paper](https://www.semanticscholar.org/paper/What-Tasks-can-be-Performed-with-an-Uncalibrated-Hespanha-Dodds/2b4b27fa9992bb7d295a61e3ff0dd5d5baf945c5) by Hespanha et. al.
 # Requirements
+Install the required packages using the following command:
 ```
 pip install -r requirements.txt
 ```
